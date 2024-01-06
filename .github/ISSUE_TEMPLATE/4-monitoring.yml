@@ -1,0 +1,39 @@
+name: Monitoring & Performance Request
+description: Related to application performance monitoring, log management, system health checks, and alerting & notification.
+title: "[Monitoring & Performance]: "
+labels: ["monitoring", "performance", "triage"]
+assignees:
+  - webera
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for initiating this request for Monitoring & Performance services! Please provide the required details below.
+  - type: dropdown
+    id: service
+    attributes:
+      label: Choose the Service
+      options:
+        - Application Performance Monitoring
+        - Log Management
+        - System Health Checks
+        - Alerting & Notification
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you for more information?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Describe Your Requirements
+      description: Please detail what you need, along with any specific goals or constraints.
+      placeholder: Describe your needs here.
+    validations:
+      required: true
+

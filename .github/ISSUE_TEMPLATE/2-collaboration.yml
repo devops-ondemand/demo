@@ -1,0 +1,38 @@
+name: Collaboration & Version Control Request
+description: Related to git repository setup, branch strategy planning, collaborative workflows, and code review processes.
+title: "[Collaboration & Version Control]: "
+labels: ["collaboration", "version-control", "triage"]
+assignees:
+  - webera
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for selecting our Collaboration & Version Control services! Please provide the necessary details to help us understand your needs.
+  - type: dropdown
+    id: service
+    attributes:
+      label: Choose the Service
+      options:
+        - Git Repository Setup
+        - Branch Strategy Planning
+        - Collaborative Workflows
+        - Code Review Processes
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you for further collaboration or clarification?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Describe Your Collaboration & Version Control Needs
+      description: Include specific goals, tools, or methodologies you want us to use or address.
+      placeholder: Detail your requirements here.
+    validations:
+      required: true

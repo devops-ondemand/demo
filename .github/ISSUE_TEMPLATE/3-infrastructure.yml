@@ -1,0 +1,40 @@
+name: Infrastructure Management Request
+description: Related to cloud configuration, container orchestration, virtual machine management, and network optimization.
+title: "[Infrastructure]: "
+labels: ["infrastructure", "triage"]
+assignees:
+  - webera
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for choosing DevOps Lightning for your Infrastructure Management needs. Please provide the details below!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: service-type
+    attributes:
+      label: Infrastructure Service
+      description: Please select the specific service you need.
+      options:
+        - Cloud Configuration & Setup
+        - Container Orchestration
+        - Virtual Machine Management
+        - Network Optimization
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Detailed Requirements
+      description: Please provide a detailed description of what you need, including any specific configurations or preferences.
+      placeholder: Describe your infrastructure needs here.
+    validations:
+      required: true
+

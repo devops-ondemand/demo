@@ -1,0 +1,39 @@
+name: Consultation & Strategy Request
+description: Related to DevOps roadmap planning, architecture review, technology stack recommendations, and project management support.
+title: "[Consultation]: "
+labels: ["consultation", "strategy", "triage"]
+assignees:
+  - webera
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for choosing our Consultation & Strategy services! Please provide details for your request.
+  - type: dropdown
+    id: service-type
+    attributes:
+      label: What type of consultation or strategy service do you need?
+      options:
+        - DevOps Roadmap Planning
+        - Architecture Review
+        - Technology Stack Recommendations
+        - Project Management Support
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Please provide detailed information about your request
+      description: Include any specific goals, challenges, or existing systems that should be considered.
+      placeholder: Share your context and objectives here
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+

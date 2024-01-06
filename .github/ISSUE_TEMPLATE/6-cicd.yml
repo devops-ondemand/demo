@@ -1,0 +1,40 @@
+name: CI/CD Request
+description: Related to pipeline configuration, automated testing, deployment automation, and build optimization.
+title: "[CI/CD]: "
+labels: ["ci/cd", "triage"]
+assignees:
+  - webera
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for choosing DevOps Lightning for your Continuous Integration & Deployment needs. Please provide the details below!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: service-type
+    attributes:
+      label: CI/CD Service
+      description: Please select the specific CI/CD service you need.
+      options:
+        - Pipeline Configuration
+        - Automated Testing
+        - Deployment Automation
+        - Build Optimization
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Detailed Requirements
+      description: Please provide a detailed description of what you need, including any specific tools, frameworks, or configurations.
+      placeholder: Describe your CI/CD needs here.
+    validations:
+      required: true
+

@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Webera 
+    url: https://www.webera.com/
+    about: Webera Website
+  - name: Terms of Service
+    url: https://github.com/devopslightning/demo/blob/main/.github/terms-of-service.md
+    about: DevOps Ligthtning Terms of Service
+

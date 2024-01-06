@@ -1,0 +1,40 @@
+name: Security & Compliance Request
+description: Related to security audits, vulnerability assessments, compliance checks, and data encryption.
+title: "[Security & Compliance]: "
+labels: ["security", "compliance", "triage"]
+assignees:
+  - webera
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for initiating this request for Security & Compliance services! Please provide the necessary details below.
+  - type: dropdown
+    id: service
+    attributes:
+      label: Choose the Service
+      options:
+        - Security Audits
+        - Vulnerability Assessments
+        - Compliance Checks
+        - Data Encryption
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you for further information?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Describe Your Security & Compliance Needs
+      description: Please detail the specific requirements, concerns, or objectives you have in mind.
+      placeholder: Describe your needs here.
+    validations:
+      required: true
+
+
